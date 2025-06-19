@@ -1,2 +1,6 @@
 dovekey
 .terraform
+*.tfstate
+*.tfstate.backup
+crash.log
+*.log
