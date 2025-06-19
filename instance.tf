@@ -31,7 +31,7 @@ resource "aws_instance" "web" {
   connection {
     type     = "ssh"
     user     = var.web_user
-    password = file("dovekey")
+    private_key = file("dovekey")
     host     = self.public_ip
   }
   provisioner "remote-exec" {
