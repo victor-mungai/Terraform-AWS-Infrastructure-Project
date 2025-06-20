@@ -5,3 +5,5 @@ dovekey
 crash.log
 *.log
 .terraform.lock.hcl
+terraform.tfstate.backup
+terraform.tfstate

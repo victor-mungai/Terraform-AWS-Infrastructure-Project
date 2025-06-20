@@ -39,6 +39,7 @@ resource "aws_instance" "web" {
       "chmod +x /tmp/web.sh",
       "sudo /tmp/web.sh"
     ]
+    on_failure = continue
   }
 }
 resource "aws_ec2_instance_state" "web-sate" {
